@@ -1,0 +1,125 @@
+---
+title: "Cloud Workshop"
+format: 
+  html:
+    toc: true
+editor: visual
+---
+
+## Setup
+
+Ultimately, these are the steps to join the workshop environment. More details are below:
+
+-   Create or Log Into your GitHub Account
+
+-   Join the Workshop Space on RStudio Cloud
+
+-   Log into your RStudio Cloud Account
+
+### Create or Log Into Your GitHub Account
+
+First, we need to log into [GitHub](https://github.com). If you do not have a GitHub account, you can visit <https://github.com/join/>.
+
+![](images/paste-63E595B1.png)
+
+### Join the Workshop Space on RStudio Cloud
+
+Your instructor should provide a link to join the Workshop space on RStudio Cloud. This has several pre-installed packages and starter projects to make the workshop go a bit smoother.
+
+When you visit this link, you will be asked to sign in:
+
+![](images/paste-50288AE0.png)
+
+### Log into your RStudio Cloud Account
+
+If you have an existing account, use that to log in!
+
+If not, use `Log In with GitHub`. You will be asked to let RStudio Cloud read your email address:
+
+![](images/paste-8FF66BD5.png){width="293"}
+
+Once logged in, you will be asked to Join the Space:
+
+![](images/paste-4BB092C7.png)
+
+This space will then be added to your available RStudio Cloud Spaces:
+
+![](images/paste-34D82D47.png)
+
+Now follow the instructor's directions for next steps in the workshop!
+
+## Other Tasks
+
+### Create a GitHub Repository
+
+If you have never created a repository before, you can do that now! There is a "New Repository" button in the top right corner.
+
+![](images/paste-50E0D90C.png)
+
+You need to choose a name, but GitHub also provides inspiration:
+
+![](images/paste-5FCD7513.png)
+
+It can also be a good idea to "Add a README file" to explain your repository:
+
+![](images/paste-5641401E.png)
+
+Once this is complete, the "git url" for your repository is what you will use to reference it from other locations (like the RStudio IDE, Jupyter, or other editor):
+
+![](images/paste-35504FF3.png)
+
+### Open a GitHub Repository in RStudio Cloud
+
+To Open a GitHub Repository in RStudio Cloud, use the "New Project" drop-down and choose "New Project from Git Repository":
+
+![](images/paste-FCF80280.png)
+
+Enter the HTTPS URL of your GitHub repository:
+
+![](images/paste-A353BC12.png)
+
+Make sure that "Add packages from the base project" is checked so that you save time on installing packages!
+
+The first deployment can sometimes take a little while! You are on your way to success!
+
+![](images/paste-16043330.png)
+
+### Publishing Workflow
+
+To test publishing, click the blue "publish" button in the IDE. It shows up on publishable resources like Shiny Apps, RMarkdown reports, Quarto documents, etc.
+
+![](images/paste-584EA6A0.png)
+
+Choose "RStudio Connect"
+
+![](images/paste-517B79C6.png)
+
+In the dialog, enter <https://rsc.training.rstudio.com> . This is an example RStudio Connect service maintained for the purpose of the workshop.
+
+![](images/paste-C1F8187A.png)
+
+You will be asked to log in. **Use your GitHub Account**.
+
+![](images/paste-ADBBFBBD.png)
+
+Add whatever information you desire to the registration page. This information does not need to be filled out.
+
+![](images/paste-F46D60B6.png)
+
+Then you will be asked to connect your IDE to the RStudio Connect service:
+
+![](images/paste-FAD1E8A4.png)
+
+Back in the IDE, finish the account connection process by clicking "Connect Account:"
+
+![](images/paste-840413A2.png)
+
+Then you should be ready to publish!!
+
+## Troubleshooting
+
+If you run into trouble with an existing package (i.e. `rsconnect`), one possible solution is to reinstall the package:
+
+    install.packages("rsconnect")
+
+Otherwise feel free to reach out to your instructor or TA with questions!!
